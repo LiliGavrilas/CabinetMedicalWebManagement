@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/PaginaSignupV2.css">
+    <script src="https://kit.fontawesome.com/9ab9988c3d.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/jpg" href="./images/favicon.jpg" />
+    <title>Cabinet Medical Web Management</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>
+                <a class="logo" href="./PaginaGeneralaCabinetV2.html">
+
+                    <span class="header_icon_logo"> <i class="fas fa-clinic-medical"></i> </span>
+                    <img class="logo" src="./images/CMED.jpg" alt="Cmed logo">
+                    <!-- <span class="header_icon"> <i class="fas fa-calendar-plus"></i> </span>
+                        <span class="header_text">Logo</span> -->
+                </a>
+            </li>
+
+
+
+            <li>
+                <a class="header_button" href="./index_cabinet.html">
+                    <span class="header_icon"> <i class="fas fa-sign-in-alt"></i> </span>
+                    <span class="header_text">Log In</span>
+                </a>
+                <!-- <ul class="header_button__login">
+                    <li>
+                        <a class="header_button" href="#">
+                            <span class="header_icon"> <i class="fas fa-key"></i> </span>
+                            <span class="header_text">Reset password</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="header_button" href="#">
+                            <span class="header_icon"> <i class="fas fa-sign-out-alt"></i> </span>
+                            <span class="header_text">Log out</span>
+                        </a>
+                    </li>
+                </ul> -->
+            </li>
+
+        </ul>
+    </header>
+
+
+
+    <main>
+
+        <div class="Signup">
+            <div id="error" class="error"></div>
+            <form id="myform" class="Signup__form">
+                <h1>Sign Up</h1>
+
+                <label>User Name</label>
+                <input type="Text" name="username" placeholder="User Name">
+
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Email">
+
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Enter Password">
+
+                <label>Confirm password</label>
+                <input type="password" name="password2" placeholder="Enter Password Again">
+
+
+                <input type="submit" value="Sign Up" id="signup_button">
+            </form>
+
+
+        </div>
+    </main>
+
+
+
+    <footer>
+        <p>Cabinet Medical Web Management</p>
+    </footer>
+    <script src="js/signup_cabinet.js"></script>
+
+
+</body>
+
+</html>

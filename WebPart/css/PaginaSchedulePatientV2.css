@@ -1,0 +1,566 @@
+* {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}/* curatam intai elementele de decoratiuni default */
+
+
+body
+{
+    background-image: url("../images/background.jpg");
+    background-size: 100% 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header
+{
+    padding: 1em;
+    height: 2em;
+    box-shadow: 0 0 3px black  ;/*linie umbra jos heder pe x,y  cu raza de estompare*/
+    background-color: rgb(86, 170, 108);
+}
+
+/* scoatem partea de albastru de la butoane */
+a { color: inherit; } 
+
+/* dimensiunea logo imagine */
+.logo img
+{
+    width: 2em; 
+    height: auto;
+    border-radius: 10px ;
+}
+
+.header_icon_logo
+{
+    display: none;
+}
+
+header ul li
+{
+    
+    width: calc(20% - 2px); /* 6 butoane */
+    float: left;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    /* background-color:rgb(41, 107, 21) ; */
+    margin-right: 2px;
+}
+
+
+header ul li a
+{
+    display: block;
+    user-select: none;
+}
+
+header ul li a:hover 
+{
+    background-color:rgb(41, 107, 21) ;
+    color: rgb(20, 54, 28);
+    transition:.5s ease;
+    border-radius: 1em;
+}
+
+
+header ul li ul li
+{
+    display: none;
+    width: 100%;
+}
+
+header ul li:hover ul li {
+    display: block;
+    background-color: rgb(86, 170, 108);
+}
+
+
+@media (max-width :600px) 
+{
+    .header_text
+    {
+        display: none;
+    }
+}
+
+@media (max-width :300px) 
+{
+    .header_icon_logo
+    {
+        display: inline;
+    }
+    .logo img
+    {
+        display: none;
+    }
+
+}
+
+footer
+{
+    box-shadow: 0 0 3px black  ;/*linie umbra jos heder pe x,y  cu raza de estompare*/
+    position:fixed;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+}
+
+
+.schedul
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0.5em;
+  row-gap: 0.5em;
+  grid-auto-rows: minmax(0em, auto);
+  background-color: #f1f1f1;
+  padding: 0.5em;
+  margin: 1em;
+  border-radius: 0.5em;
+  top: 50%;
+  left: 50%;
+  transform: translate( 0%, 5%);
+}
+
+  
+.schedul .schedul__details
+{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color:white;
+
+}
+.schedul .schedul__calendar 
+{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.schedul > .schedul__data 
+{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  position: relative;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+
+.schedul .schedul__btn 
+{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  text-align: center;
+  background-color: white;
+  
+}
+  
+.schedul__details
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5em;
+  grid-auto-rows: minmax(2em, auto);
+  grid-template-columns: minmax(1em, auto) 1fr 1fr;
+  background-color: #f1f1f1;
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+.schedul__details__section
+{
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+}
+
+.schedul__details__doctors {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.schedul__data__form
+{
+  padding: 0.5em 0.5em;
+  text-align: left;
+  width: 100%;
+  /* margin: 1.5em ; */
+  /* position: block; */
+  /* text-align: center; */
+
+}
+
+.schedul__data .schedul__data__form input
+{
+  width: 100%;
+  padding: 0.5em 0.5em;
+  /* margin: 0.5em;    */
+  /* position: relative; */
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 0.2em;
+}
+
+.schedul__data .schedul__data__form label
+{
+  font-weight: bold;
+  /* position: relative; */
+  /* margin-left: 0.5em;  */
+
+}
+
+.schedul__btn{
+  display: inline-block;
+  text-align: center;
+  
+}
+
+.schedul__btn .schedul__btn__btn1, .schedul__btn__btn2, .schedul__btn__btn3{
+    
+    border-radius: 0.5em;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5em;
+    margin: 0.5em;
+    border: none;
+    cursor: pointer;
+    width: 6em;
+    cursor: pointer;
+    text-decoration: none;
+    transition:.3s ease;
+    font-family:Arial;  
+}
+.schedul__btn__btn2{
+  background-color: red;
+  
+}
+.schedul__btn__btn3{
+  background-color: orange;
+  
+}
+
+
+
+
+.schedule__calendar 
+{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: auto;
+  letter-spacing: 0.1em;
+}
+
+.schedule__calendar__month {
+  grid-column-start: 2;
+  grid-column-end: 16;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: medium;
+  text-align: center;
+}
+
+.schedule__calendar__left_week_btn {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.2em;
+  font-size: medium;
+  text-align: center;
+  border: none;
+}
+.schedule__calendar__right_week_btn {
+  grid-column-start: 16;
+  grid-column-end: 17;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.2em;
+  font-size: medium;
+  text-align: center;
+  border: none;
+}
+
+.schedule__calendar__left_month_btn {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: rgba(255, 255, 255, 0.5);
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 0.2em;
+  font-size: medium;
+  text-align: center;
+  border: none;
+  
+}
+.schedule__calendar__right_month_btn {
+  grid-column-start: 16;
+  grid-column-end: 17;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: rgba(255, 255, 255, 0.5);
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 0.2em;
+  font-size: medium;
+  text-align: center;
+  border: none;
+}
+
+
+
+
+.schedule__calendar__inside 
+{
+  display: grid;
+  grid-column: 2/ span 14;
+  grid-row-start: 2;
+
+  grid-template-columns: repeat(14, 1fr);  
+  grid-template-rows: auto;
+}
+.schedule__calendar__inside__head
+{
+
+  grid-column: auto / span 2;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.2em;
+  font-size: small;
+  font-weight: bold;
+  text-align: center;
+}
+
+.schedule__calendar__inside__hours_btn 
+{
+  grid-column: auto / span 2;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* padding: 0.2em; */
+  font-size: medium;
+  text-align: center;
+  border: none;
+}
+.schedule__calendar__inside__down_btn 
+{
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.2em;
+  font-size: medium;
+  text-align: center;
+  border: none;
+}
+
+.schedule__calendar__inside__up_btn {
+  grid-column-start: 8;
+  grid-column-end: 15;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.2em;
+  font-size: medium;
+  text-align: center;
+  border: none;
+}
+
+
+
+
+.schedule__calendar__inside__hours_btn__open{
+
+background-color: green;
+color: white;
+cursor: pointer;
+justify-self: stretch;
+}
+
+.hover-value {
+/* visibility: collapse; */
+-webkit-transition: width 2s ease-in-out;
+transition: width 3s;
+overflow: hidden;
+display:none;
+top: 0.2em;
+position:relative;
+font-size: small;
+}
+
+
+.schedule__calendar__inside__hours_btn__closed{
+/* border-radius: 0.2em; */
+background-color: grey;
+color: white;
+padding: 0.2em 0.2em;
+margin-top: 0;
+border: none;
+cursor: pointer;
+width: 100%;
+}
+
+.schedule__calendar__inside__hours_btn__open{
+  /* border-radius: 0.2em; */
+  background-color: green;
+  color: white;
+  padding: 0.2em 0.2em;
+  margin-top: 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.schedule__calendar__inside__hours_btn__bussy:hover .hover-value {
+  visibility: visible;
+  display: block;
+}
+
+.schedule__calendar__inside__hours_btn__bussy
+{
+  /* border-radius: 0.2em; */
+  background-color: red;
+  color: white;
+  padding: 0.2em 0.2em;
+  margin-top: 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.calendar_select
+{
+  border-radius: 0.2em;
+  background-color: green;
+  color: white;
+  padding: 0.2em 0.2em;
+  margin-top: 0;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width :500px) 
+{
+    .schedule__calendar__inside 
+    {
+      gap:0em;
+      padding: 0em;
+    }
+    .schedule__calendar__inside__hours_btn button[id^='calendar_row2'] , button[id^='calendar_row3'] , button[id^='calendar_row4'] , button[id^='calendar_row5'] , button[id^='calendar_row6'] , button[id^='calendar_row7']
+    {
+      display: none;
+    }
+    .schedule__calendar__inside__head div[id^='day_1'] , div[id^='day_2'] , div[id^='day_3'] , div[id^='day_4'] , div[id^='day_5'] , div[id^='day_6']
+    {
+      display: none;
+    }
+    .schedule__calendar__inside__head
+    {
+      grid-column-start: 1;
+      grid-column-end: 15;
+      grid-row: 1/2;
+    }
+    .schedule__calendar__inside__hours_btn 
+    {
+
+      grid-column-start: 1;
+      grid-column-end: 15;
+    }
+    .schedule__calendar__inside__down_btn 
+    {
+      grid-column-start: 1;
+      grid-column-end: 8;
+      grid-row-start: 31;
+      grid-row-end: 32;
+    }
+
+    .schedule__calendar__inside__up_btn 
+    {
+      grid-column-start: 8;
+      grid-column-end: 15;
+      grid-row-start: 31;
+      grid-row-end: 32;
+    }
+    .schedul__data__form
+    {
+      padding: 0em 0em;
+    }
+    .schedul__data .schedul__data__form input
+    {
+      padding: 0em 0em;
+    }
+
+    .schedul__details__section
+    {
+
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+
+    }
+
+    .schedul__details__doctors {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+    .schedul__details
+    {
+
+      gap: 0em;
+      padding: 0em;
+      border-radius: 0.5em;
+    }
+    .schedule__calendar 
+    {
+      letter-spacing: 0em;
+    }
+
+    .schedul__btn .schedul__btn__btn1, .schedul__btn__btn2, .schedul__btn__btn3
+    {
+    
+      padding: 0em;
+      margin: 0em;
+      width: 6em;
+    }
+    .schedul__data 
+    {
+      padding: 0%;
+    }
+    .schedul
+    {
+      font-size: 14px;
+    }
+
+}
+
+
+
+
+
+
+
+

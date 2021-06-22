@@ -1,0 +1,224 @@
+* {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}/* curatam intai elementele de decoratiuni default */
+
+body
+{
+    background-image: url("../images/background.jpg");
+    background-size: 100% 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+header{
+    padding: 1em;
+    height: 2em;
+    box-shadow: 0 0 3px black  ;/*linie umbra jos heder pe x,y  cu raza de estompare*/
+    background-color: rgb(86, 170, 108);
+}
+
+/* scoatem partea de albastru de la butoane */
+a { color: inherit; } 
+
+/* dimensiunea logo imagine */
+.logo img
+{
+    width: 2em; 
+    height: auto;
+    border-radius: 10px ;
+}
+
+.header_icon_logo
+{
+    display: none;
+}
+
+header ul li
+{
+    
+     /*width: calwc(16.6% - 2px); 6 butoane butoane doctor/cabinet*/
+    width: calc(20% - 2px); /* 5 butoane butoane pacient*/
+    float: left;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    /* background-color:rgb(41, 107, 21) ; */
+    margin-right: 2px;
+}
+
+
+header ul li a
+{
+    display: block;
+    user-select: none;
+}
+
+header ul li a:hover {
+    background-color:rgb(41, 107, 21) ;
+    color: rgb(20, 54, 28);
+    transition:.5s ease;
+    border-radius: 1em;
+}
+
+
+header ul li ul li
+{
+    display: none;
+    width: 100%;
+}
+
+header ul li:hover ul li {
+    display: block;
+    background-color: rgb(86, 170, 108);
+}
+
+
+@media (max-width :600px) 
+{
+    .header_text
+    {
+        display: none;
+    }
+}
+
+@media (max-width :300px) 
+{
+    .header_icon_logo
+    {
+        display: inline;
+    }
+    .logo img
+    {
+        display: none;
+    }
+
+}
+
+footer{
+    box-shadow: 0 0 3px black  ;/*linie umbra jos heder pe x,y  cu raza de estompare*/
+    position:fixed;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+ }
+
+
+
+
+
+
+.reset-password
+{
+    border-radius: 2em;
+    background-color: #f1f1f1;
+    padding: 4em;
+    width: 60%;
+    /* height: 40%; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.reset-password h1
+{
+    padding: 0.5em;
+}
+
+.reset-password__form input 
+{
+    width: 100%;
+    padding: 1em 1em;
+    margin: 2em 0em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 0.5em; 
+    text-indent: 0em;
+
+  }
+
+
+.reset-password__form button
+{
+    border-radius: 0.5em; 
+    background-color: rgb(86, 170, 108);
+    color: white;
+    padding: 1.2em 1.5em;
+    /* margin: 8px 0; */
+    border: none;
+    cursor: pointer;
+    width: 100%; 
+}  
+
+.reset-password__form button:hover 
+{
+    opacity: 0.8;
+}
+
+
+.reset-password__form label
+{
+    font-weight: bold;
+    position:absolute;
+    margin: 0em;
+    margin-left: 0.5em; 
+    
+}
+
+
+
+@media (min-width :1000px) 
+{
+    .reset-password
+    {
+        border-radius: 2em;
+        padding: 4em;
+    }
+}
+
+
+
+@media (max-width :600px) 
+{
+    .reset-password 
+    {
+        border-radius: 1em;
+        padding: 2em;
+        width: 15em;
+    }
+}
+
+@media (max-width :300px) 
+{
+    .reset-password
+    {
+        border-radius: 1em;
+        padding: 0em;
+        width: 12em;
+    }
+    .reset-password__form input 
+    {
+        padding: 1em 0em;
+    }
+    
+    .reset-password__form button
+    {
+        width: 100%; 
+    }  
+    .reset-password__form button
+    {
+        border-radius: 0.5em; 
+        width: 100%; 
+    }  
+
+}

@@ -1,0 +1,71 @@
+body{
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;  
+ }
+ .schedul{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    background-color: #f1f1f1;
+    padding:0.5em;
+    margin:1em;
+    border-radius: 5px;
+ }
+ .schedul .schedul__header {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    background-color: rgb(151, 34, 34);
+  }
+  .schedul .schedul__data {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+  }
+ .schedul .addStaff__calendar {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: block;
+    position: relative;
+    
+  }
+  .schedul .addStaff__btn {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: center;
+    background-color: white;
+    
+  }
+  .schedul__data__form{
+    padding: 0.5em;
+    text-align: left;
+    display: inline-block;
+   }
+   .schedul__data__form input[type=email], input[type=text], input[type=number] {
+    width: 100%;
+    height: 1em;
+    padding: 1em 1em;
+    margin: 0.5em;    
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+  .schedul__data .schedul__data__form label{
+    font-weight: bold;
+    position:absolute;
+    margin: -10px;
+    margin-left:5px ; 
+
+}

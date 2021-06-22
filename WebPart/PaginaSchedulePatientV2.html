@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/PaginaSchedulePatientV2.css">
+    <script src="https://kit.fontawesome.com/9ab9988c3d.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/jpg" href="./images/favicon.jpg" />
+    <title>Cabinet Medical Web Management</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>
+                <a class="logo" href="./PaginaGeneralaPatientV2.html">
+
+                    <span class="header_icon_logo"> <i class="fas fa-clinic-medical"></i> </span>
+                    <img class="logo" src="./images/CMED.jpg" alt="Cmed logo">
+                    <!-- <span class="header_icon"> <i class="fas fa-calendar-plus"></i> </span>
+                        <span class="header_text">Logo</span> -->
+                </a>
+            </li>
+
+            <li>
+                <a class="header_button" href="./PaginaSchedulePatientV2.html">
+                    <span class="header_icon"> <i class="fas fa-calendar-plus"></i> </span>
+                    <span class="header_text">Schedules</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="header_button" href="./PaginaFilesPatient.html">
+                    <span class="header_icon"> <i class="fas fa-file-medical"></i> </span>
+                    <span class="header_text">Files</span>
+                </a>
+            </li>
+
+            <!-- <li>
+                <a class="header_button">
+                    <span class="header_icon"> <i class="fas fa-user-plus"></i> </span>
+                    <span class="header_text">Invite</span>
+                </a>
+                <ul class="header_button">
+                    <li>
+                        <a class="header_button" href="./PaginaInvitePatientV2.html">
+                            <span class="header_icon"> <i class="fas fa-user-injured"></i> </span>
+                            <span class="header_text">Patient</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="header_button" href="./PaginaInvitePatientV2.html">
+                            <span class="header_icon"> <i class="fas fa-user-md"></i> </span>
+                            <span class="header_text">Doctor</span>
+                        </a>
+                    </li>
+                </ul>
+            </li> -->
+
+            <li>
+                <a class="header_button" href="./PaginaChatPatientV2.html">
+                    <span class="header_icon"> <i class="fas fa-comments"></i> </span>
+                    <span class="header_text">Chat</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="header_button">
+                    <span class="header_icon"> <i class="fas fa-user"></i> </span>
+                    <span class="header_text">User</span>
+                </a>
+                <ul class="header_button__login">
+                    <li>
+                        <a class="header_button" href="./PaginaResetPassPatient.html">
+                            <span class="header_icon"> <i class="fas fa-key"></i> </span>
+                            <span class="header_text">Reset password</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="header_button" href="./index_patient.html">
+                            <span class="header_icon"> <i class="fas fa-sign-out-alt"></i> </span>
+                            <span class="header_text">Log out</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </li>
+
+        </ul>
+    </header>
+
+
+
+    <main>
+
+
+
+
+        <div class="schedul">
+            <!-- <div class="schedul__header">
+                <h3>Book Appointment</h3>
+            </div> -->
+            <div class="schedul__details">
+
+                <!-- <label class="schedul__details__label1" >Department</label> -->
+                <select class=" schedul__details__section">
+                    <option value="Default"> Department </option>
+                    <option value="Pediatrics"> Pediatrics </option>
+                    <option value="Family Medicine"> Family Medicine</option>
+                    <option value="Cardiology"> Cardiology </option>
+                    <option value="Allergy"> Allergy </option>
+                    <option value="General surgery"> ResuGeneral surgerylts </option>
+                    <option value="Dermatology"> Dermatology </option>
+                    <option value="Endocrinology">Endocrinology</option>
+                    <option value="Gastroenterology"> Gastroenterology </option>
+                    <option value="Neurology"> Neurology </option>
+                    <option value="Ophthalmology"> Ophthalmology </option>
+                </select>
+
+
+
+                <!-- <label class="schedul__details__label2" >Doctor</label> -->
+                <select class=" schedul__details__doctors">
+                    <option value="Default"> Doctor </option>
+                    <option value="DoctorA"> Doctor </option>
+                    <option value="DoctorA"> Popescu Ion </option>
+                    <option value="DoctorB">DoctorsB</option>
+                    <option value="DoctorC"> DoctorsC </option>
+                    <option value="DoctorD"> DoctorsC </option>
+                    <option value="DoctorE"> DoctorE </option>
+                    <option value="DoctorF"> DoctorF </option>
+                    <option value="DoctorG">DoctorG</option>
+                    <option value="DoctorH"> DoctorH </option>
+                    <option value="DoctorI"> DoctorI </option>
+                    <option value="DoctorM"> DoctorM </option>
+                </select>
+
+
+            </div>
+
+
+
+
+            <div class="schedul__data">
+
+                <form action="#" class="schedul__data__form">
+
+                    <!-- <label>Full Name</label>
+                    <input type="text" placeholder="Full Name" required>
+
+                    <label>Email</label>
+                    <input type="email" placeholder="Email" required>
+
+                    <label>Phone </label>
+                    <input type="text" placeholder="Phone number" required> -->
+
+                    <!-- <label>Reason For Visit</label> -->
+                    <select class=" schedul__data__form">
+                        <option value="Default"> Reason For Visit </option>
+                        <option value="Consultations"> Consultations </option>
+                        <option value="Ultrasound"> Ultrasound</option>
+                        <option value="results"> Results </option>
+                        <option value="results"> EKG </option>
+                        <option value="results"> Results </option>
+
+                    </select>
+
+
+                </form>
+
+            </div>
+            <div class="schedule__calendar">
+                <div class="schedule__calendar__month" id="selected_month">JANUARY 2021</div>
+                <!-- <button type="button" class="schedule__calendar__left_month_btn" id="month_leftBtn">&#9668;</button>
+                <button type="button" class="schedule__calendar__left_week_btn" id="week_leftBtn">&#9668;</button> -->
+                <button type="button" class="schedule__calendar__left_month_btn" id="week_leftBtn">&#9668;</button>
+                <button type="button" class="schedule__calendar__left_week_btn" id="day_leftBtn">&#9668;</button>
+                <div class="schedule__calendar__inside">
+                    <div class="schedule__calendar__inside__head">
+                        <div class="schedule__calendar__inside__day" id="day_0_schedule">MON 05/04</div>
+                    </div>
+                    <div class="schedule__calendar__inside__head">
+                        <div class="schedule__calendar__inside__day" id="day_1_schedule">TUE 06/04</div>
+                    </div>
+                    <div class="schedule__calendar__inside__head">
+                        <div class="schedule__calendar__inside__day" id="day_2_schedule">WED 07/04</div>
+                    </div>
+                    <div class="schedule__calendar__inside__head">
+                        <div class="schedule__calendar__inside__day" id="day_3_schedule">THU 08/04</div>
+                    </div>
+                    <div class="schedule__calendar__inside__head">
+                        <div class="schedule__calendar__inside__day" id="day_4_schedule">FRI 09/04</div>
+                    </div>
+                    <div class="schedule__calendar__inside__head">
+                        <div class="schedule__calendar__inside__day" id="day_5_schedule">SAT 10/04</div>
+                    </div>
+                    <div class="schedule__calendar__inside__head">
+                        <div class="schedule__calendar__inside__day" id="day_6_schedule">SUN 11/04</div>
+                    </div>
+
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__bussy" value="08:00"
+                            id="calendar_row1_col1">
+                            8:00 <span class="hover-value">Popescu Ion 0747678790</span></button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__closed" value="08:00"
+                            id="calendar_row2_col1"> 8:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="08:00"
+                            id="calendar_row3_col1"> 08:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="08:00"
+                            id="calendar_row4_col1"> 08:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="08:00"
+                            id="calendar_row5_col1"> 08:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="08:00"
+                            id="calendar_row6_col1"> 08:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="08:00"
+                            id="calendar_row7_col1"> 08:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="09:00"
+                            id="calendar_row1_col2"> 09:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="09:00"
+                            id="calendar_row2_col2"> 09:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="09:00"
+                            id="calendar_row3_col2"> 09:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="09:00"
+                            id="calendar_row4_col2"> 09:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="09:00"
+                            id="calendar_row5_col2"> 09:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="09:00"
+                            id="calendar_row6_col2"> 09:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="09:00"
+                            id="calendar_row7_col2"> 09:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="10:00"
+                            id="calendar_row1_col3"> 10:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="10:00"
+                            id="calendar_row2_col3"> 10:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="10:00"
+                            id="calendar_row3_col3"> 10:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="10:00"
+                            id="calendar_row4_col3"> 10:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="10:00"
+                            id="calendar_row5_col3"> 10:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="10:00"
+                            id="calendar_row6_col3"> 10:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="10:00"
+                            id="calendar_row7_col3"> 10:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="11:00"
+                            id="calendar_row1_col4"> 11:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="11:00"
+                            id="calendar_row2_col4"> 11:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="11:00"
+                            id="calendar_row3_col4"> 11:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="11:00"
+                            id="calendar_row4_col4"> 11:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="11:00"
+                            id="calendar_row5_col4"> 11:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="11:00"
+                            id="calendar_row6_col4"> 11:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="11:00"
+                            id="calendar_row7_col4"> 11:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="12:00"
+                            id="calendar_row1_col5"> 12:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="12:00"
+                            id="calendar_row2_col5"> 12:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="12:00"
+                            id="calendar_row3_col5"> 12:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="12:00"
+                            id="calendar_row4_col5"> 12:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="12:00"
+                            id="calendar_row5_col5"> 12:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="12:00"
+                            id="calendar_row6_col5"> 12:00</button>
+                    </div>
+                    <div class="schedule__calendar__inside__hours_btn">
+                        <button type="button" class="schedule__calendar__inside__hours_btn__open" value="12:00"
+                            id="calendar_row7_col5"> 12:00</button>
+                    </div>
+
+
+                    <button type="button" class="schedule__calendar__inside__down_btn"
+                        id="hours_downBtn">&#9660;</button>
+                    <button type="button" class="schedule__calendar__inside__up_btn" id="hours_upBtn">&#9650;</button>
+                </div>
+                <!-- <button type="button" class="schedule__calendar__right_week_btn" id="week_rightBtn">&#9658;</button>
+                <button type="button" class="schedule__calendar__right_month_btn" id="month_rightBtn">&#9658;</button> -->
+                <button type="button" class="schedule__calendar__right_week_btn" id="day_rightBtn">&#9658;</button>
+                <button type="button" class="schedule__calendar__right_month_btn" id="week_rightBtn">&#9658;</button>
+            </div>
+
+
+
+
+            <div class="schedul__btn ">
+                <button type="submit" class="schedul__btn__btn1">Book</button>
+                <button type="submit" class="schedul__btn__btn2">Cancel</button>
+                <!-- <button type="submit" class="schedul__btn__btn3">Move</button> -->
+            </div>
+
+
+            <script src="./js/calendar.js"></script>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <p>Cabinet Medical Web Management</p>
+    </footer>
+
+
+</body>
+
+</html>

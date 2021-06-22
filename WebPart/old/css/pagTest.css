@@ -1,0 +1,183 @@
+body{
+   
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+header{
+    padding: 15px;
+    box-shadow: 0 0 3px black  ;/*linie umbra jos heder pe x,y  cu raza de estompare*/
+    background-color: rgb(86, 170, 108);
+    
+}
+ 
+header li{
+    display: inline;/*toate butoanele in linie */
+    padding-left: 45px;
+
+}
+
+
+header li .header_button {
+    color: black;
+    text-decoration: none;
+    padding: 13px;
+    transition:.3s ease;
+    border-radius: 12px;
+    font-family:Arial;
+}
+
+header li .header_button:hover{
+    /*color:blue; /*colorare a butoanelor la atingere*/
+    background-color:rgb(41, 107, 21) ;
+    color: rgb(20, 54, 28);
+    text-decoration: none;
+    
+} 
+
+
+header ul .login a{
+   
+    color: black;
+    text-decoration: none;
+    position: relative;
+    font-family:Arial;
+    padding-right: 30px;
+    float: right;
+    border-radius: 5px;
+    transition:.3s ease;
+    padding: 13px;
+    top: -15px;
+    
+  
+}
+
+
+header ul .login a:hover{
+    
+    background-color:rgb(41, 107, 21) ;
+    color: rgb(20, 54, 28);
+    text-decoration: none;
+    
+
+}
+header ul li a .logo{
+    height: 5em;
+    width: 5em ;
+    float: left;
+    margin-top:-35px;
+    border-radius:35px ;
+}
+
+
+.body > .addStaff{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    background-color: #f1f1f1;
+    padding:0.5em;
+    margin:1em;
+    border-radius: 5px;
+ }
+
+
+ .addStaff .addStaff__header {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+  }
+ .addStaff .addStaff___photo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: block;
+    position: relative;
+    
+  }
+ .addStaff .addStaff__data {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+  }
+
+ .addStaff___photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+  /* stilizare btn si adaugare in mijlocul img */
+  .addStaff___photo .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(50%, 50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .addStaff___photo .btn:hover {
+    background-color: black;
+  }
+
+
+ .addStaff__data__form{
+     padding: 0.5em;
+     text-align: left;
+     display: block;
+    }
+     
+ 
+ 
+ .addStaff__data__form input[type=email], input[type=text], input[type=number] {
+     width: 100%;
+     height: 1em;
+     padding: 1em 1em;
+     margin: 0.5em;    
+     border: 1px solid #ccc;
+     box-sizing: border-box;
+     border-radius: 5px;
+   }
+ 
+.addStaff__data__form button
+ {
+     border-radius: 5px;
+     background-color: #4CAF50;
+     color: white;
+     padding: 14px 20px;
+     margin: 8px 0;
+     border: none;
+     cursor: pointer;
+     width: 100%;
+       
+ }  
+ 
+ button:hover {
+     opacity: 0.8;
+ } 
+
+ .addStaff__data > .addstaff__data__form label{
+     font-weight: bold;
+     position:absolute;
+     margin: -10px;
+     margin-left:5px ; 
+ 
+ }
+ 
+
+ 

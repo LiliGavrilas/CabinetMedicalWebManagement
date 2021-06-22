@@ -1,0 +1,141 @@
+body{
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+
+    
+ }
+
+ .addStaff{
+    display: grid;
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    background-color: #f1f1f1;
+    padding:0.5em;
+    margin:1em;
+    border-radius: 5px;
+ }
+
+
+ .addStaff .addStaff__header {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    background-color: white;
+  }
+ .addStaff .addStaff___photo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: block;
+    position: relative;
+    
+  }
+ .addStaff .addStaff__data {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+  }
+
+ .addStaff___photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+  /* stilizare btn si adaugare in mijlocul img */
+  .addStaff___photo .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(50%, 50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .addStaff___photo .btn:hover {
+    background-color: black;
+  }
+
+
+ .addStaff__data__form{
+     padding: 0.5em;
+     text-align: left;
+     display: block;
+    }
+     
+ 
+ 
+ .addStaff__data__form input[type=email], input[type=text], input[type=number] {
+     width: 100%;
+     height: 1em;
+     padding: 1em 1em;
+     margin: 0.5em;    
+     border: 1px solid #ccc;
+     box-sizing: border-box;
+     border-radius: 5px;
+   }
+ 
+.addStaff__data__form button
+ {
+     border-radius: 5px;
+     background-color: #4CAF50;
+     color: white;
+     padding: 14px 20px;
+     margin: 8px 0;
+     border: none;
+     cursor: pointer;
+     width: 100%;
+       
+ }  
+ 
+ button:hover {
+     opacity: 0.8;
+ } 
+
+ .addStaff__data > .addstaff__data__form label{
+     font-weight: bold;
+     position:absolute;
+     margin: -10px;
+     margin-left:5px ; 
+ 
+ }
+ 
+ @media (max-width :415px) {
+  .addStaff{
+  background-color: #f1f1f1;
+  padding:0.5em;
+  margin:1em;
+  border-radius: 5px;
+  }
+  
+element.style {
+}
+.addStaff .addStaff___photo {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: block;
+    position: relative;
+}
+.addStaff .addStaff__data {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+}
+ 

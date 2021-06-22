@@ -1,0 +1,336 @@
+* {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}/* curatam intai elementele de decoratiuni default */
+
+body
+{
+    background-image: url("../images/background.jpg");
+    background-size: 100% 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+header{
+    padding: 1em;
+    height: 2em;
+    box-shadow: 0 0 3px black  ;/*linie umbra jos heder pe x,y  cu raza de estompare*/
+    background-color: rgb(86, 170, 108);
+}
+
+/* scoatem partea de albastru de la butoane */
+a { color: inherit; } 
+
+/* dimensiunea logo imagine */
+.logo img
+{
+    width: 2em; 
+    height: auto;
+    border-radius: 10px ;
+}
+
+.header_icon_logo
+{
+    display: none;
+}
+
+header ul li
+{
+    
+     /*width: calwc(16.6% - 2px); 6 butoane butoane doctor/cabinet*/
+    width: calc(20% - 2px); /* 5 butoane butoane pacient*/
+    float: left;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    /* background-color:rgb(41, 107, 21) ; */
+    margin-right: 2px;
+}
+
+
+header ul li a
+{
+    display: block;
+    user-select: none;
+}
+
+header ul li a:hover {
+    background-color:rgb(41, 107, 21) ;
+    color: rgb(20, 54, 28);
+    transition:.5s ease;
+    border-radius: 1em;
+}
+
+
+header ul li ul li
+{
+    display: none;
+    width: 100%;
+}
+
+header ul li:hover ul li {
+    display: block;
+    background-color: rgb(86, 170, 108);
+}
+
+
+@media (max-width :600px) 
+{
+    .header_text
+    {
+        display: none;
+    }
+}
+
+@media (max-width :300px) 
+{
+    .header_icon_logo
+    {
+        display: inline;
+    }
+    .logo img
+    {
+        display: none;
+    }
+
+}
+
+footer{
+    box-shadow: 0 0 3px black  ;/*linie umbra jos heder pe x,y  cu raza de estompare*/
+    position:fixed;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+ }
+
+
+/* */
+
+
+
+
+
+
+@media (min-width :1000px) 
+{
+    .LogIn
+    {
+        border-radius: 2em;
+        padding: 4em;
+    }
+}
+
+
+
+@media (max-width :600px) 
+{
+    .LogIn 
+    {
+        border-radius: 1em;
+        padding: 2em;
+        width: 15em;
+    }
+}
+
+@media (max-width :300px) 
+{
+    .LogIn
+    {
+        border-radius: 1em;
+        padding: 0em;
+        width: 12em;
+    }
+    .LogIn__form input 
+    {
+        padding: 1em 0em;
+    }
+    
+    .LogIn__form button
+    {
+        width: 100%; 
+    }  
+    .LogIn__form button
+    {
+        border-radius: 0.5em; 
+        width: 100%; 
+    }  
+
+}
+
+h1
+{
+    text-align: left;
+    padding-left: 10%;
+    padding: 0.5em 0.5em;
+}
+
+.chat
+{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 0.5em;
+    row-gap: 0.5em;
+    grid-auto-rows: minmax(0em, auto);
+    background-color: #f1f1f1;
+    padding: 0.5em;
+    margin: 1em;
+    border-radius: 0.5em;
+
+}
+
+.chat .chat__user-list
+{
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color:rgb(223, 252, 235);
+  border-radius: 5px;
+}
+.chat .chat__messages-box
+{
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color:rgb(223, 252, 235);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;  
+}
+
+.chat .chat__write-new-message
+{
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color:rgb(223, 252, 235);
+  border-radius: 5px;
+}
+.chat .chat__send-new-message
+{
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color:rgb(223, 252, 235);
+  border-radius: 5px;
+}
+
+
+.chat .chat__messages-box .chat__messages-box__empty
+{
+    padding: 0.5em 0.5em;
+}
+.chat .chat__messages-box .chat__messages-box__txt-sent , .chat__messages-box__voice-sent
+{
+    text-align: left;
+    margin-right: auto;
+    background-color:rgb(194, 248, 217);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 0.5em;
+    width: 80%;
+}
+.chat .chat__messages-box .chat__messages-box__txt-received , .chat__messages-box__voice-received
+{
+    text-align: left;
+    margin-left: auto;
+    background-color:rgb(173, 223, 195);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 0.5em;
+    width: 80%;
+}
+
+.chat .chat__write-new-message input
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    width: 95%;
+    padding: 0.5em 0.5em;
+    border-radius: 5px;
+
+    
+}
+.chat__messages-box__person
+{
+    font-weight: bold;
+}
+
+
+.chat__send-new-message
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.chat__send-new-message > button
+{
+    padding: 0.5em 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    background-color:rgb(46, 117, 77);
+    border: none;
+    cursor: pointer;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    border-radius: 5px;
+}
+
+.chat__send-new-message > button:hover 
+{
+    opacity: 0.8;
+}
+
+.chat__user-list tr:nth-child(even) 
+{
+    background-color: #a6e6c6;
+    width: 100%;
+}
+
+.chat__user-list table
+{
+    border: none;
+    border-collapse: collapse;
+}
+
+.chat__user-list__deparment-filter
+{
+    width: 100%;
+}
+
+@media (max-width :600px) 
+{
+    .chat td, th
+    {
+        padding: 0em;
+    }
+    .chat 
+    {
+        font-size: 10px;
+    }
+}
+
+@media (max-width :300px) 
+{
+
+    .chat 
+    {
+        font-size: 7px;
+    }
+}

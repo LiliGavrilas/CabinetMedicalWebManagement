@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: large;
+    display:block;
+    position:relative;
+    width: 100%;
+
+}
+header{
+    padding: 15px;
+    box-shadow: 0 0 3px black  ;/*linie umbra jos heder pe x,y  cu raza de estompare*/
+    background-color: rgb(86, 170, 108);
+    
+}
+ 
+header li{
+    display: inline;/*toate butoanele in linie */
+    padding-left: 45px;
+
+}
+
+
+header li .header_button {
+    color: black;
+    text-decoration: none;
+    padding: 13px;
+    transition:.3s ease;
+    border-radius: 5px;
+    font-family:Arial;
+}
+
+header li .header_button:hover{
+    /*color:blue; /*colorare a butoanelor la atingere*/
+    background-color:rgb(41, 107, 21) ;
+    color: rgb(20, 54, 28);
+    text-decoration: none;
+    
+} 
+
+
+header ul .login a{
+   
+    color: black;
+    text-decoration: none;
+    position: relative;
+    font-family:Arial;
+    padding-right: 30px;
+    float: right;
+    border-radius: 12px;
+    transition:.3s ease;
+    padding: 13px;
+    top: -15px;
+    
+  
+}
+
+
+header ul .login a:hover{
+    
+    background-color:rgb(41, 107, 21) ;
+    color: rgb(20, 54, 28);
+    text-decoration: none;
+    
+
+}
+header ul li a .logo{
+    height: 5em;
+    width: 5em ;
+    float: left;
+    margin-top:-35px;
+    border-radius:35px ;
+}
+footer{
+   box-shadow: 0 0 3px black  ;/*linie umbra jos heder pe x,y  cu raza de estompare*/
+   position:fixed;
+   bottom: 0px;
+   left: 0;
+   width: 100%;
+   height: 50px;
+}
+
+
+

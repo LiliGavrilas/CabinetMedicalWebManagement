@@ -1,0 +1,75 @@
+
+body{
+    margin:0;
+    padding: 0;
+    
+ }
+ 
+ .Singup{
+     border-radius: 5px;
+     background-color: #f1f1f1;
+     padding: 40px;
+     transform: translate(-50%, 15%);
+     left:50%;
+     top:10%;
+     width: 35em;
+     height: 32em;
+     position:relative;
+     text-align: center;
+     
+     /*Metoda translate () mută un element
+      din poziția sa actuală (conform parametrilor dați pentru axa X și axa Y).*/
+ 
+     
+ }
+ 
+ .Singup_form input[type=email], input[type=password], input[type=text], input[checkbox] {
+     width: 100%;
+     padding: 12px 10px;
+     margin: 15px 0px;
+     display: inline-block;
+     border: 1px solid #ccc;
+     box-sizing: border-box;
+     border-radius: 5px;
+     
+   }
+ 
+ 
+ .Singup_form button
+ {
+     border-radius: 5px;
+     background-color: #4CAF50;
+     color: white;
+     padding: 14px 20px;
+     margin: 8px 0;
+     border: none;
+     cursor: pointer;
+     width: 100%;
+       
+ }  
+ 
+ button:hover {
+     opacity: 0.8;
+ }
+ 
+ .Singup_form label{
+     font-weight: bold;
+     position:absolute;
+     margin: -10px;
+     margin-left:5px ; 
+ 
+ }
+ @media (max-width :540px) {
+    .Singup {
+        border-radius: 5px;
+        background-color: #f1f1f1;
+        padding: 40px;
+        transform: translate(-50%, 15%);
+        left: 50%;
+        bottom: 40px;
+        width: 14em;
+        height: 30em;
+        position: relative;
+        text-align: center;
+    }
+}

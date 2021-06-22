@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/PaginaChatCabinetV2.css">
+    <script src="https://kit.fontawesome.com/9ab9988c3d.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/jpg" href="./images/favicon.jpg" />
+    <title>Cabinet Medical Web Management</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>
+                <a class="logo" href="./PaginaGeneralaCabinetV2.html">
+
+                    <span class="header_icon_logo"> <i class="fas fa-clinic-medical"></i> </span>
+                    <img class="logo" src="./images/CMED.jpg" alt="Cmed logo">
+                    <!-- <span class="header_icon"> <i class="fas fa-calendar-plus"></i> </span>
+                        <span class="header_text">Logo</span> -->
+                </a>
+            </li>
+
+            <li>
+                <a class="header_button" href="./PaginaScheduleCabinetV2.html">
+                    <span class="header_icon"> <i class="fas fa-calendar-plus"></i> </span>
+                    <span class="header_text">Schedules</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="header_button" href="./PaginaFilesCabinetV2.html">
+                    <span class="header_icon"> <i class="fas fa-file-medical"></i> </span>
+                    <span class="header_text">Files</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="header_button">
+                    <span class="header_icon"> <i class="fas fa-user-plus"></i> </span>
+                    <span class="header_text">Invite</span>
+                </a>
+                <ul class="header_button__login">
+                    <li>
+                        <a class="header_button" href="./PaginaCabinetInvitePatientV2.html">
+                            <span class="header_icon"> <i class="fas fa-user-injured"></i> </span>
+                            <span class="header_text">Patient</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="header_button" href="./PaginaInviteDoctorV2.html">
+                            <span class="header_icon"> <i class="fas fa-user-md"></i> </span>
+                            <span class="header_text">Doctor</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a class="header_button" href="./PaginaChatCabinetV2.html">
+                    <span class="header_icon"> <i class="fas fa-comments"></i> </span>
+                    <span class="header_text">Chat</span>
+                </a>
+            </li>
+
+            <li>
+                <a class="header_button">
+                    <span class="header_icon"> <i class="fas fa-user"></i> </span>
+                    <span class="header_text">User</span>
+                </a>
+                <ul class="header_button__login">
+                    <li>
+                        <a class="header_button" href="./PaginaResetPassCabinetV2.html">
+                            <span class="header_icon"> <i class="fas fa-key"></i> </span>
+                            <span class="header_text">Reset password</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="header_button" href="./index_cabinet.html">
+                            <span class="header_icon"> <i class="fas fa-sign-out-alt"></i> </span>
+                            <span class="header_text">Log out</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </li>
+
+        </ul>
+    </header>
+
+
+
+    <main>
+        <h1>Cabinet chat</h1>
+        <div class="chat">
+
+            <div class='chat__user-list'>
+
+                <!-- <input type="radio" id="chat__user-list__select" name="chat__user-list__selected-user" value="none"> -->
+
+                    <select class="chat__user-list__deparment-filter">
+                        <option value="Default"> Department </option>
+                        <option value="Pediatrics"> Pediatrics </option>
+                        <option value="Cardiology"> Cardiology</option>
+                        <option value="Gastroenterology"> Gastroenterology </option>
+                        <option value="Allergy"> Allergy </option>
+                        <option value="General surgery"> General surgery</option>
+                        <option value="Dermatology"> Dermatology </option>
+                        <option value="Endocrinology">Endocrinology</option>
+                        <option value="Gastroenterology"> Gastroenterology </option>
+                        <option value="Neurology"> Neurology </option>
+                        <option value="Ophthalmology"> Ophthalmology </option>
+                    </select>
+                    <table class="chat__user-list__doctors-table">
+                        <tr>
+                            <th>Department Doctor Name</th>
+                        </tr>
+
+                        <tr>
+                            <td><input type="radio" id="chat__user-list__select" name="chat__user-list__selected-user" value="id-user"> Cardiology Ana Popescu</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="chat__user-list__select" name="chat__user-list__selected-user" value="id-user"> Gastroenterology Ana Ionescu</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="chat__user-list__select" name="chat__user-list__selected-user" value="id-user"> Cardiology George Popescu</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="chat__user-list__select" name="chat__user-list__selected-user" value="id-user"> Cardiology George Ion</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="chat__user-list__select" name="chat__user-list__selected-user" value="id-user"> Gastroenterology Ana Popescu</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="chat__user-list__select" name="chat__user-list__selected-user" value="id-user"> Infectious disease Ana Ionescu</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="chat__user-list__select" name="chat__user-list__selected-user" value="id-user"> Gastroenterology George Popescu</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="chat__user-list__select" name="chat__user-list__selected-user" value="id-user"> Endocrinology George Ion</td>
+                        </tr>
+                    </table>
+                    <div class='chat__user-list__filter'>
+                        <input type="chat__user-list__filter__by-name" placeholder="Search patient by name" required>
+                    </div>
+
+                    <table class="chat__user-list__patient-table">
+                        <tr>
+                            <th>Patient Name</th>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="chat__user-list__select" name="chat__user-list__selected-user" value="id-user"> Ana Popescu</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="chat__user-list__select" name="chat__user-list__selected-user" value="id-user"> Ana Ionescu</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="chat__user-list__select" name="chat__user-list__selected-user" value="id-user"> George Popescu</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="chat__user-list__select" name="chat__user-list__selected-user" value="id-user"> George Ion</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="chat__user-list__select" name="chat__user-list__selected-user" value="id-user"> Ana Popescu</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="chat__user-list__select" name="chat__user-list__selected-user" value="id-user"> Ana Ionescu</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="chat__user-list__select" name="chat__user-list__selected-user" value="id-user"> George Popescu</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="chat__user-list__select" name="chat__user-list__selected-user" value="id-user"> George Ion</td>
+                        </tr>
+                    </table>
+
+            </div>
+
+            <div class='chat__messages-box'>
+
+                <a class='chat__messages-box__empty'> </a>
+                <a class='chat__messages-box__empty'> </a>
+                <a class='chat__messages-box__empty'> </a>
+                <a class='chat__messages-box__empty'> </a>
+                <a class='chat__messages-box__empty'> </a>
+                <a class='chat__messages-box__empty'> </a>
+                <a class='chat__messages-box__empty'> </a>
+                <a class='chat__messages-box__empty'> </a>
+                <a class='chat__messages-box__empty'> </a>
+                <a class='chat__messages-box__empty'> </a>
+
+                <a class='chat__messages-box__txt-sent'>
+                    <span class="chat__messages-box__person"> <i class="fas fa-user"></i> My admin/cabinet name: </span>
+                    <span class="chat__messages-box__message"> Buna ziua. Am o intrebare legata de programul dumneavoastra. </span>
+                </a>
+
+                <a class='chat__messages-box__txt-received'>
+                    <span class="chat__messages-box__person"> <i class="fas fa-user-md"></i> Doctor name: </span>
+                    <span class="chat__messages-box__message"> Buna ziua. Da spuneti va rog! </span>
+                </a>
+
+                <a class='chat__messages-box__voice-sent'>
+                    <span class="chat__messages-box__person"> <i class="fas fa-user"></i> My admin/cabinet name: </span>
+                    <span class="chat__messages-box__message"> Voice message sent. Play it <i class="fas fa-play"></i>
+                    </span>
+                </a>
+
+                <a class='chat__messages-box__voice-received'>
+                    <span class="chat__messages-box__person"> <i class="fas fa-user-md"></i> Doctor name: </span>
+                    <span class="chat__messages-box__message"> Voice message received. Play it <i
+                            class="fas fa-play"></i> </span>
+                </a>
+
+                <a class='chat__messages-box__txt-sent'>
+                    <span class="chat__messages-box__person"> <i class="fas fa-user"></i> My admin/cabinet name: </span>
+                    <span class="chat__messages-box__message"> Multumesc frumos! </span>
+                </a>
+
+                <a class='chat__messages-box__txt-received'>
+                    <span class="chat__messages-box__person"> <i class="fas fa-user-md"></i> Doctor name: </span>
+                    <span class="chat__messages-box__message"> Cu placere. </span>
+                </a>
+
+            </div>
+
+            <div class='chat__write-new-message'>
+                <input type="new-message" placeholder="Write a text message here.." required>
+            </div>
+
+            <div class='chat__send-new-message'>
+                <button type="chat__send-new-message__text"> <i class="fas fa-paper-plane"></i> </button>
+                <button type="chat__send-new-message__voice"> <i class="fas fa-microphone"></i> </button>
+                <p>
+            </div>
+
+        </div>
+    </main>
+
+
+
+    <footer>
+        <p>Cabinet Medical Web Management</p>
+    </footer>
+
+
+</body>
+
+</html>
